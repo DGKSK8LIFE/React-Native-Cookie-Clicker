@@ -6,7 +6,7 @@ import Game from './utils/Game';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Button title="Start?" style={styles.button} onPress={Game()}></Button>
+      <Button title="Start?" style={styles.button} onPress={Game}></Button>
       <StatusBar style="auto" />
     </View>
   );
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   button: {
     flex: 1,
-    backgroundColor: '#ff0000',
+    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
   },
