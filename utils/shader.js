@@ -2,8 +2,8 @@ let p;
 let particles = [];
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,0)
-  canvas.style("z-index","-1")
+  canvas.position(0, 0);
+  canvas.style('z-index', '-1');
   const particlesLen = floor(window.innerWidth / 7);
   for (let i = 0; i < particlesLen; i++) {
     particles.push(new Particle());
@@ -27,8 +27,12 @@ class Particle {
     this.vel = createVector(random(-3, 3), random(-1, 1));
   }
   draw = () => {
-    noStroke()
-    fill(map(this.pos.x,0,window.innerWidth,0,255),map(this.pos.y,0,window.innerHeight,0,255),map(this.pos.x,window.innerWidth,0,0,200))
+    noStroke();
+    fill(
+      map(this.pos.x, 0, window.innerWidth, 0, 255),
+      map(this.pos.y, 0, window.innerHeight, 0, 255),
+      map(this.pos.x, window.innerWidth, 0, 0, 200)
+    );
     circle(this.pos.x, this.pos.y, this.size);
   };
 
@@ -50,10 +54,9 @@ class Particle {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
       if (d < 120) {
         //stroke(map(this.pos.x,window.innerWidth,0,0,255),map(this.pos.x,0,window.innerWidth,0,255),map(this.pos.x,0,window.innerHeight,0,255), 100);
-        stroke(0,70)
+        stroke(0, 70);
         line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
       }
     });
   };
 }
-
