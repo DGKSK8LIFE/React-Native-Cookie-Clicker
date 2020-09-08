@@ -24,17 +24,22 @@ class Particle {
     //width and height are native variables in p5
     this.pos = createVector(random(0, width), random(0, height));
     this.size = 13;
-    this.vel = createVector(random(-3, 3), random(-1, 1));
+    this.vel = createVector(random(-1, 1), random(-1, 1));
+    this.dx = width/2
+    this.dy = height/2
+    //dm/dt
   }
   draw = () => {
     noStroke()
-    fill(map(this.pos.x,0,window.innerWidth,0,255),map(this.pos.y,0,window.innerHeight,0,255),map(this.pos.x,window.innerWidth,0,0,200))
+    fill(map(this.pos.x,0,window.innerWidth,0,255),map(this.pos.y,0,window.innerHeight,0,255),map(this.pos.x,window.innerWidth,0,0,255))
     circle(this.pos.x, this.pos.y, this.size);
   };
 
   update = () => {
-    this.pos.add(this.vel);
-    this.edges();
+    //how do I want to do this
+    //I want there to be a rate and when it slows down the rate -> 0
+    this.pos.add(-(mouseX-this.dx)/50*this.vel.x,-(mouseY-this.dy)/50*this.vel.y);
+    this.edges()
   };
   edges = () => {
     if (this.pos.x < 0 || this.pos.x > width) {
