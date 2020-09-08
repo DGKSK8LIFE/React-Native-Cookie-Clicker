@@ -1,22 +1,17 @@
 let p;
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(width, height);
   p = new Particle();
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill(0);
-    background(255);
-    circle(mouseX, mouseY, 80);
-  }
+    p.draw()
 }
-
 class Particle {
   constructor() {
     //position
     //width and height are native variables in p5
-    this.pos = createVector(random(0, width, random(0, height)));
+    this.pos = createVector(random(0, width), random(0, height));
     this.size = 10;
   }
   draw = () => {
