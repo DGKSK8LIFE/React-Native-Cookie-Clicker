@@ -8,9 +8,9 @@ export default function SketchCircle(p) {
 
 const styles = StyleSheet.create({
   circle: {
-    width: 44,
-    height: 44,
-    borderRadius: 44 / 2,
+    width: 84,
+    height: 84,
+    borderRadius: 84 / 2,
     backgroundColor: 'red',
   },
 });
