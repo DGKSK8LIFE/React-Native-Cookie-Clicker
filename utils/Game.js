@@ -1,5 +1,8 @@
 import React from 'react';
+import Sketch from './GenerateCircles';
 
 export default function Game() {
-  return <h1>HELLO WORLD!</h1>;
+  return (
+    <Sketch />
+  );
 }

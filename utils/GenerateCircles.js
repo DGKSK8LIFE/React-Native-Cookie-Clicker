@@ -1,6 +1,6 @@
 import P5Wrapper from 'react-p5-wrapper';
 
-export default function sketch(p) {
+export default function Sketch(p) {
   let rotation = 0;
 
   p.setup = function () {
