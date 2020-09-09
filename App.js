@@ -6,7 +6,7 @@ import Game from './utils/Game';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Button title="Start?" style={styles.button} onPress={Game}></Button>
+      <Game />
       <StatusBar style="auto" />
     </View>
   );
