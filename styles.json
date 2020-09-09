@@ -1,0 +1,14 @@
+{
+  "container": {
+    "flex": 1,
+    "backgroundColor": "#fff",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+  "button": {
+    "flex": 1,
+    "backgroundColor": "red",
+    "alignItems": "center",
+    "justifyContent": "center"
+  }
+}
