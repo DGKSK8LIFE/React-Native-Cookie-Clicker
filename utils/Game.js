@@ -1,8 +1,8 @@
 import React from 'react';
-import Sketch from './GenerateCircles';
+import SketchCircle from './GenerateCircles';
 
 export default function Game() {
   return (
-    <Sketch />
+    <SketchCircle />
   );
 }
