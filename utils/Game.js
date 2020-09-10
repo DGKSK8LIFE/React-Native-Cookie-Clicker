@@ -6,13 +6,17 @@ export default function Game(props) {
 
   return (
     <View>
-      {props.shown==true?<View
-      onClick={()=>setScore(score+1)}
-        onTouchStart={() => {
-        props.onHide()
-        }}
-        style={styles.CircleShapeView}
-      />:<Text></Text>}
+      {props.shown == true ? (
+        <View
+          onClick={() => setScore(score + 1)}
+          onTouchStart={() => {
+            props.onHide();
+          }}
+          style={styles.CircleShapeView}
+        />
+      ) : (
+        <Text></Text>
+      )}
     </View>
   );
 }

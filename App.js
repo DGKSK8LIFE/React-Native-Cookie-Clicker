@@ -19,7 +19,7 @@ export default function App() {
     return styles;
   }
   const [score, setScore] = useState(0);
-  const [show,setShow] = useState([false,true])
+  const [show, setShow] = useState([false, true]);
   return (
     <View style={styles.container}>
       <Text>hi</Text>
@@ -36,12 +36,12 @@ export default function App() {
     </View>
   );
   function handleHide(index) {
-    const circles = [...show]
-   console.log(circles)
-    circles[index]=false
-    console.log(show,"old show!")
-    setShow([!show[0],!show[1]])
-    console.log(show,"show")
+    const circles = [...show];
+    console.log(circles);
+    circles[index] = false;
+    console.log(show, 'old show!');
+    setShow([!show[0], !show[1]]);
+    console.log(show, 'show');
   }
 }
 
