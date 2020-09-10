@@ -1,15 +1,13 @@
-import { View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet, Button, Text } from 'react-native';
 import React, { useState } from 'react';
-import P5Wrapper from 'react-p5-wrapper';
 
 export default function Game(p) {
   const [score, setScore] = useState(0);
 
   return (
     <View >
-      <h1>Score: {score}</h1>
-      <Button onPress={() => setScore(score + 1)} style={styles.circle}/>
-    </View>
+      <Text>Score: {score}</Text>
+     <View  onTouchStart={() => setScore(score + 1)}style={styles.CircleShapeView}/></View>
   );
 }
 
@@ -20,4 +18,11 @@ const styles = StyleSheet.create({
     borderRadius: 84 / 2,
     backgroundColor: 'red',
   },
+  CircleShapeView: {
+    //To make Circle Shape
+    width: 150,
+    height: 150,
+    borderRadius: 150 / 2,
+    backgroundColor: '#FF00FF',
+ },
 });
