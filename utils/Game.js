@@ -17,7 +17,7 @@ export default function Game(p) {
 
 const styles = StyleSheet.create({
   CircleShapeView: {
-    //To make Circle Shape
+    // To make Circle Shape
     width: 84,
     height: 84,
     borderRadius: 84 / 2,
