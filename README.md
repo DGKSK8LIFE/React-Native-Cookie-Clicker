@@ -1,2 +1,3 @@
 # React-Native-Whackamole
-A Whackamole game made in react native and p5.JS
+
+A Whackamole game made in React Native.
