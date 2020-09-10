@@ -1,5 +1,5 @@
 import { View, StyleSheet, Button } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
 
 export default function Game(p) {
