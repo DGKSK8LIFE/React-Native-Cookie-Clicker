@@ -5,9 +5,13 @@ export default function Game(p) {
   const [score, setScore] = useState(0);
 
   return (
-    <View >
+    <View>
       <Text style={styles.h1}>Score: {score}</Text>
-     <View onTouchStart={() => setScore(score + 1)} style={styles.CircleShapeView}/></View>
+      <View
+        onTouchStart={() => setScore(score + 1)}
+        style={styles.CircleShapeView}
+      />
+    </View>
   );
 }
 
@@ -24,8 +28,8 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 150 / 2,
     backgroundColor: '#FF00FF',
- },
- h1:{
-   fontSize:40
- }
+  },
+  h1: {
+    fontSize: 40,
+  },
 });
