@@ -15,7 +15,7 @@ export default function Game(props) {
           style={styles.CircleShapeView}
         />
       ) : (
-        <Text>Score: { score }</Text>
+        <Text></Text>
       )}
     </View>
   );
