@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"
-let CirclePos = []
+let circlePos = []
 const circles = 18
 for(let i=0; i<circles;i++){
     const posStyle = StyleSheet.create({
@@ -8,7 +8,7 @@ for(let i=0; i<circles;i++){
             paddingTop:80*Math.random()
         }
     })
-    CirclePos.push(posStyle)
+    circlePos.push(posStyle)
 }
-console.log(CirclePos)
-export default CirclePos
+console.log(circlePos)
+export default circlePos
