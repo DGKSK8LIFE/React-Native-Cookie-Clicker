@@ -6,9 +6,9 @@ export default function Game(p) {
   const [score, setScore] = useState(0);
 
   return (
-    <View>
+    <View >
       <h1>Score: {score}</h1>
-      <Button onPress={() => setScore(score + 1)} style={styles.circle} />
+      <Button onPress={() => setScore(score + 1)} style={styles.circle}/>
     </View>
   );
 }
