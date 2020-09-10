@@ -8,6 +8,7 @@ export default function Game(p) {
     <View>
       <Text style={styles.h1}>Score: {score}</Text>
       <View
+      onClick={()=>setScore(score+1)}
         onTouchStart={() => setScore(score + 1)}
         style={styles.CircleShapeView}
       />

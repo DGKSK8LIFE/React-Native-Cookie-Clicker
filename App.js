@@ -2,10 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Game from './utils/Game';
+import  CirclePos from "./utils/Circles"
 export default function App() {
   return (
     <View style={styles.container}>
-      <Game />
+        <Game/>
       <StatusBar style="auto" />
     </View>
   );
