@@ -8,8 +8,6 @@ import { Dimensions } from 'react-native';
 const { width } = Dimensions.get('window');
 const { height } = Dimensions.get('window');
 
-const testArr = [1, 2, 3, 4];
-
 export default function App() {
   function createStyles() {
     const styles = StyleSheet.create({
@@ -37,7 +35,7 @@ export default function App() {
   );
   function handleHide(index) {
     const circles = [...show];
-    console.log(circles);
+    console.log(circles)
     circles[index] = false;
     console.log(show, 'old show!');
     setScore(score+1)
