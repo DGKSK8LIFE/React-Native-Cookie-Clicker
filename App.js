@@ -11,7 +11,7 @@ const { height } = Dimensions.get('window');
 export default function App() {
   function createStyles() {
     const styles = StyleSheet.create({
-      paddingLeft: (85+width) * Math.random() - 400,
+      paddingLeft: (85 + width) * Math.random() - 400,
       paddingTop: (height + 100) * Math.random() - 420,
     });
     return styles;
@@ -35,10 +35,10 @@ export default function App() {
   );
   function handleHide(index) {
     const circles = [...show];
-    console.log(circles)
+    console.log(circles);
     circles[index] = false;
     console.log(show, 'old show!');
-    setScore(score+1)
+    setScore(score + 1);
     setShow([!show[0], !show[1]]);
     console.log(show, 'show');
   }
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-     alignItems: 'center',
-     justifyContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
