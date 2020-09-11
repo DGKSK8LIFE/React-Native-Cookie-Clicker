@@ -4,11 +4,8 @@ import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
 import Game from './utils/Game';
 import { Dimensions } from 'react-native';
 
-const width = Dimensions.get('window');
-const height = Dimensions.get('window');
-
 export default function App() {
-  
+  return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({
