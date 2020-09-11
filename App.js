@@ -35,12 +35,8 @@ export default function App() {
   );
   function handleHide(index) {
     const circles = [...show];
-    console.log(circles);
-    circles[index] = false;
-    console.log(show, 'old show!');
     setScore(score + 1);
     setShow([!show[0], !show[1]]);
-    console.log(show, 'show');
   }
 }
 
