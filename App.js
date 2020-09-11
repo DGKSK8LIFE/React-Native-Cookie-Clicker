@@ -1,8 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import Game from './utils/Game';
-import { Dimensions } from 'react-native';
 
 export default function App() {
   return <View style={styles.container}></View>;
