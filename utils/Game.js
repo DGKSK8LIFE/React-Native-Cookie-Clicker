@@ -6,7 +6,7 @@ export default function Game() {
 
   return (
     <View>
-      <Text style={styles.h1}>Score: {score}</Text>
+      <Text style={styles.h1}>{score}</Text>
       <TouchableOpacity
         onPress={() => setScore(score + 1)}
         style={styles.CircleShapeView}
@@ -18,13 +18,16 @@ export default function Game() {
 const styles = StyleSheet.create({
   CircleShapeView: {
     // To make Circle Shape
-    width: 100,
-    height: 100,
-    borderRadius: 100 / 2,
+    width: 150,
+    height: 150,
+    borderRadius: 150 / 2,
     backgroundColor: '#FF0000',
+    alignContent: "center"
   },
   h1: {
-    fontSize: 20,
-    fontWeight: "bold"
+    fontSize: 40,
+    fontWeight: "bold",
+    marginBottom: 15,
+    textAlign: "center"
   },
 });
