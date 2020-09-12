@@ -10,7 +10,6 @@ export default function Game() {
       <Text style={styles.h1}>{score}</Text>
       <TouchableOpacity
         onPress={() => setScore(score + 1)}
-        onPress={PowerUps()}
         style={styles.CircleShapeView}
       />
     </View>
