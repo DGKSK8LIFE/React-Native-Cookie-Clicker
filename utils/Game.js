@@ -1,4 +1,4 @@
-import { View, StyleSheet, Button, Text } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import React, { useState } from 'react';
 
 export default function Game() {
@@ -6,11 +6,11 @@ export default function Game() {
 
   return (
     <View style={styles.CircleShapeView}>
-      <Button
+      <View
         onClick={() => setScore(score + 1)}
         style={styles.CircleShapeView}
       />
-      <Text>Score: { score }</Text>
+      <Text>Score: {score}</Text>
     </View>
   );
 }
