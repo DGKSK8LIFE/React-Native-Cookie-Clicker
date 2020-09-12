@@ -19,16 +19,18 @@ export default function Game() {
 const styles = StyleSheet.create({
   CircleShapeView: {
     // To make Circle Shape
-    width: 150,
-    height: 150,
-    borderRadius: 150 / 2,
+    width: 200,
+    height: 200,
+    borderRadius: 200 / 2,
     backgroundColor: '#FF0000',
-    alignContent: "center"
+    alignContent: "center",
+    backgroundColor: '#9b12db',
   },
   h1: {
     fontSize: 40,
     fontWeight: "bold",
     marginBottom: 15,
-    textAlign: "center"
+    textAlign: "center",
+    color: '#9b12db'
   },
 });
