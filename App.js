@@ -3,7 +3,11 @@ import { StyleSheet, View } from 'react-native';
 import Game from './utils/Game';
 
 export default function App() {
-  return <View style={styles.container}></View>;
+  return (
+    <View style={styles.container}>
+      <Game/>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
