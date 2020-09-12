@@ -10,7 +10,7 @@ export default function Game() {
         onClick={() => setScore(score + 1)}
         style={styles.CircleShapeView}
       />
-      <Text>Score: {score}</Text>
+      <Text style={styles.h1}>Score: {score}</Text>
     </View>
   );
 }
@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF00FF',
   },
   h1: {
-    fontSize: 40,
+    fontSize: 20
   },
 });
