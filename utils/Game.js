@@ -1,14 +1,16 @@
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
+import PowerUps from './PowerUps';
 
 export default function Game() {
   const [score, setScore] = useState(0);
-
+  
   return (
     <View>
       <Text style={styles.h1}>{score}</Text>
       <TouchableOpacity
         onPress={() => setScore(score + 1)}
+        onPress={PowerUps()}
         style={styles.CircleShapeView}
       />
     </View>
