@@ -1,3 +1,3 @@
-# React-Native-Whackamole
+# React-Native-Cookie-Clicker
 
-A low poly Whackamole game made in React Native.
+A low budget cookie clicker clone made in React Native.
