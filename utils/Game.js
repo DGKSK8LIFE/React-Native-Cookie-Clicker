@@ -1,6 +1,6 @@
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
-import PowerUps from './PowerUps';
+import { LinearTextGradient } from 'react-native-text-gradient';
 
 export default function Game() {
   const [score, setScore] = useState(0);
