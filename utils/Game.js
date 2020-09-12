@@ -25,12 +25,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF0000',
     alignContent: "center",
     backgroundColor: '#9b12db',
+    borderColor: '#fff',
+    borderWidth: 3 
   },
   h1: {
     fontSize: 40,
     fontWeight: "bold",
     marginBottom: 15,
     textAlign: "center",
-    color: '#9b12db'
+    color: '#9b12db',
   },
 });
